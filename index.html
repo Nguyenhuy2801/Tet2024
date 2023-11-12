@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./CSS/table.css" media="screen and (min-width:580px)">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/icon-dev.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -290,88 +291,26 @@ CHÍNH SÁCH ĐỔI TRẢ - BẢO HÀNH :
               </pre>              
           </div>
       </section>
-        <section class="section2">
-            <div class="section2__conteiner">
-                <p class="conteiner__title">Monedas</p>
-                <div class="conteiner__table"> 
-                    <table >
-                        <!-- filas -->
-                        <tr>
-                            <!-- columnas -->
-                            <td class="table-top__left">Bitcoin</td>
-                            <td class="table-top__rigth table-top__rigth--color">$ 1.96 
-                                <span class="down"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Ethereum</td>
-                            <td class="table-top__rigth table-top__rigth--color">$ 0.07 
-                                <span class="up"></span></td>
-                        </tr>
-                        <tr>
-                            <td>Ripple</td>
-                            <td class="table-top__rigth table-top__rigth--color">$ 2.15 
-                                <span class="down"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="table-botton__left">Stellar</td>
-                            <td class="table-top__rigth table-top__rigth--color">$ 4.96 
-                                <span class="down"></span>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="conten">
-                        <p class="conten_actuality"> 
-                            <b>Actualizado:</b> 19 Julio 23:45
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <section class="settion3">
-            <span class="batata"></span>
-            <div class="settion3__encabezado">
-                <h2>Creamos un producto sin comparación.</h2>
-                <p>Confiable y diseñado para su uso diario.</p>
-            </div>
-        </section>
-        <section class="cards">
-            <article class="cards__card1">
-                <span class="card1__icon"></span>
-                <h3 class="card1__title"> Tiempo real</h3>
-                <p class="card1__contenr">Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.</p>
-            </article>
-
-            <article class="cards__card2">
-                <span class="card2__icon"></span>
-                <h3 class="card2__title">No hay tasas escondidas</h3>
-                <p class="card2__contenr">Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.</p>
-            </article>
-
-            <article class="cards__card3">
-                <span class="card3__icon"></span>
-                <h3 class="card3__title">Compara monedas</h3>
-                <p class="card3__contenr">No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.</p>
-            </article>
-
-            <article class="cards__card4">
-                <span class="card4__icon"></span>
-                <h3 class="card4__title">Información confiable</h3>
-                <p class="card4__contenr">Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.</p>
-            </article>            
-        </section>
-        <section class="settion4">
-            <h2>Conócelo hoy.</h2>
-        </section>
         <section class="secttion5">
+
+  <!-- <a class="item" href="#"><img src="https://i.imgur.com/5Mk3EfW.jpg" /></a>
+  <a class="item" href="#"><img src="https://i.imgur.com/79aU67L.jpg" /></a>
+  <a class="item" href="#"><img src="https://i.imgur.com/x3wSoFU.jpg" /></a>
+  <a class="item" href="#"><img src="https://i.imgur.com/27fTqbA.jpg" /></a>
+  <a class="item" href="#"><img src="https://i.imgur.com/RjdFV6n.jpg" /></a>
+  <a class="item" href="#"><img src="https://i.imgur.com/6W8JOza.jpg" /></a>
+  <a class="item" href="#"><img src="https://i.imgur.com/rwLY1JH.jpg" /></a> -->
             <div class="settion5__encabezado">
                 <h2>Sản phẩm bán chạy</h2>
                 <p>Mô tả sản phẩm bán chạy nhất</p>
             </div>
-            <section id="planes" class="cards-plan__slaider">
-                <article class="cards-plan__plan1">
+            <section id="planes" class="slider-item">
+              <div id="scroller">
+                <div class="nav">
+                  <a class="prev">&laquo;</a>
+                  <a class="next">&raquo;</a>
+                </div>
+                <article class="cards-plan__plan1 item">
                     <h2 >Top bán chạy</h2>
                     <div class="plan1_content">
                         <h3>Pago Anual</h3>
@@ -380,7 +319,7 @@ CHÍNH SÁCH ĐỔI TRẢ - BẢO HÀNH :
                         <button class="cal-button">Mua ngay <span></span></button>
                     </div>
                 </article>
-                <article class="cards-plan__plan1">
+                <article class="cards-plan__plan1 item">
                     <div class="plan1_content">
                         <h3>Pago Anual</h3>
                         <p class="precio"> <span class="dolar">$</span>99</p>
@@ -389,8 +328,25 @@ CHÍNH SÁCH ĐỔI TRẢ - BẢO HÀNH :
                     </div>
                 </article>
                 
+                <article class="cards-plan__plan1 item">
+                  <div class="plan1_content">
+                      <h3>Pago Anual</h3>
+                      <p class="precio"> <span class="dolar">$</span>99</p>
+                      <p class="description">Thần tài lắc cầm tiền vàng</p>
+                      <button class="cal-button">Mua ngay <span></span></button>
+                  </div>
+              </article>
+              
+              <article class="cards-plan__plan1 item">
+                <div class="plan1_content">
+                    <h3>Pago Anual</h3>
+                    <p class="precio"> <span class="dolar">$</span>99</p>
+                    <p class="description">Thần tài lắc cầm tiền vàng</p>
+                    <button class="cal-button">Mua ngay <span></span></button>
+                </div>
+            </article>
 
-                <article class="cards-plan__plan1">
+                <article class="cards-plan__plan1 item">
                     <div class="plan1_content">
                         <h3>Pago Anual</h3>
                         <p class="precio"> <span class="dolar">$</span>99</p>
@@ -412,7 +368,6 @@ CHÍNH SÁCH ĐỔI TRẢ - BẢO HÀNH :
                 </ul>
             </div>
             <div class="copiray">
-                <img  loading="lazy"  src="./img/logo-footer.svg" alt="logo de la empresa">
             </div>
     </footer>
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
