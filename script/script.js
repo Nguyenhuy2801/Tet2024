@@ -91,6 +91,12 @@ tl.add(animateNotes(notesG1)).add(animateNotes(notesG2), ">0.05").add(animateNot
 // {
 //     window.location="./main.html";
 // });
+window.addEventListener('resize', function() {
+  var child = document.querySelector('.section__video');
+  child.style.height = child.v * 0.6 + 'px'; /* Tỉ lệ 3:4 (0.75 = 3/4) */
+});
+
+window.dispatchEvent(new Event('resize')); // Thiết lập chiều cao ban đầu khi trang tải
 
 //countdown
 
