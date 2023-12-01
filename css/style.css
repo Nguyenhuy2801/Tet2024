@@ -122,9 +122,9 @@ body {
 
 #scroller {
   width: 200px;
-  height: 200px;
+  height: 300px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 25px 0;
   -webkit-perspective: 500px;
   -moz-perspective: 500px;
   -o-perspective: 500px;
@@ -160,9 +160,9 @@ body {
 }
 
 #scroller .left {
-  -webkit-transform: rotateY(25deg) translateX(-320px) skewY(-5deg) scale(0.4, 0.6);
-  -moz-transform: rotateY(25deg) translateX(-320px) skewY(-5deg) scale(0.4, 0.6);
-  -o-transform: rotateY(25deg) translateX(-320px) skewY(-5deg) scale(0.4, 0.6);
+  -webkit-transform: rotateY(25deg) translateX(-250px) skewY(-5deg) scale(0.4, 0.6);
+  -moz-transform: rotateY(25deg) translateX(-250px) skewY(-5deg) scale(0.4, 0.6);
+  -o-transform: rotateY(25deg) translateX(-250px) skewY(-5deg) scale(0.4, 0.6);
 }
 
 #scroller .middle {
@@ -173,9 +173,9 @@ body {
 }
 
 #scroller .right {
-  -webkit-transform: rotateY(-25deg) translateX(320px) skewY(5deg) scale(0.4, 0.6);
-  -moz-transform: rotateY(-25deg) translateX(320px) skewY(5deg) scale(0.4, 0.6);
-  -o-transform: rotateY(-25deg) translateX(320px) skewY(5deg) scale(0.4, 0.6);
+  -webkit-transform: rotateY(-25deg) translateX(250px) skewY(5deg) scale(0.4, 0.6);
+  -moz-transform: rotateY(-25deg) translateX(250px) skewY(5deg) scale(0.4, 0.6);
+  -o-transform: rotateY(-25deg) translateX(250px) skewY(5deg) scale(0.4, 0.6);
 }
 
 #scroller .left-hidden {

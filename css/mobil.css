@@ -73,7 +73,7 @@ header img{
 }
 .header__content .header__link{
     position: absolute;
-    display: block;
+    display: none;
     left: calc(50% - 115px);
     padding:14px;
     width: 229px;
@@ -413,7 +413,7 @@ main{
     min-width: 280px;
     height: auto;
     margin: 0 auto;
-    padding-top: 64px;
+    /* padding-top: 64px; */
 }
 .settion5__encabezado h2{
     font-size: 2.4rem;
